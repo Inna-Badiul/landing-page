@@ -1,0 +1,35 @@
+.section-about {
+height:initial;
+  .block-wrapper{
+    text-align: center;
+    padding:10px;
+    background-color:rgba(194, 204, 204, 0.6);
+    width: 80vw;
+    margin: 15px auto;
+    .block-title{
+        margin: 20px 0 20px 0;
+    }
+  }
+  .image-who-we-are{
+      margin: 0 auto;
+      height:300px;
+      width:250px;
+      background: url(../images/chicken2.jpg) no-repeat center center;
+      background-size:cover;
+  }
+  .image-what-we-do{
+      margin: 0 auto;
+      height:300px;
+      width:250px;
+      background: url(../images/nest-and-eggs.jpg) no-repeat center center;
+      background-size:cover;
+  }
+  .image-how-we-do{
+      margin: 0 auto;
+      height:300px;
+      width:250px;
+      background: url(../images/chicken3.jpg) no-repeat center center;
+      background-size:cover;
+  }
+}
+
