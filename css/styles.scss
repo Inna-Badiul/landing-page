@@ -2,6 +2,7 @@
 @import 'header';
 @import 'section-home';
 @import 'section-about';
+@import 'section-values';
 
 body {
   font-family: 'Quicksand', sans-serif;
@@ -14,3 +15,9 @@ h2{
 section{
   height:100vh;
 }
+@media screen and (min-device-width: 700px) {
+  section{
+    padding: 0 20px 0 20px;
+  }
+}
+

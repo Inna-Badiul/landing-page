@@ -10,5 +10,11 @@ $(function() {
         $(".nav-menu").removeClass("nav-open");
         $(".close-button").hide();
     });
+
+    $(".nav-menu a").click(function () {
+        $(".menu-items-wrapper").hide();
+        $(".nav-menu").removeClass("nav-open");
+        $(".close-button").hide();
+    });
     
 });

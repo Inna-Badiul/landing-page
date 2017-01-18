@@ -1,11 +1,11 @@
 .section-about {
-height:initial;
+  height:initial;
+  text-align: center;
   .block-wrapper{
-    text-align: center;
     padding:10px;
     background-color:rgba(194, 204, 204, 0.6);
     width: 80vw;
-    margin: 15px auto;
+    margin: 15px 20px auto auto;
     .block-title{
         margin: 20px 0 20px 0;
     }
@@ -31,5 +31,19 @@ height:initial;
       background: url(../images/chicken3.jpg) no-repeat center center;
       background-size:cover;
   }
+}
+
+@media screen and (min-device-width: 700px) {
+    .section-about {
+          .section-title{
+            margin: 20px 0 60px 0;
+          }
+         .block-wrapper{
+            margin: 15px;
+            width: 40vw;
+            vertical-align: top;
+            display: inline-block;
+         }
+    }
 }
 

@@ -480,6 +480,12 @@ template {
     .header .menu-items-wrapper .list-item:last-child {
       padding-right: 0; } }
 
+@media screen and (max-device-width: 800px) {
+  html {
+    background: url(../images/The-Poppy.jpg) #000 no-repeat center center fixed; }
+  #bgvid {
+    display: none; } }
+
 .section-home {
   overflow: hidden; }
   .section-home video#bgvid {
@@ -504,20 +510,14 @@ template {
     margin: -13px 0px 0px -89px;
     position: absolute; }
 
-@media screen and (max-device-width: 800px) {
-  html {
-    background: url(../images/The-Poppy.jpg) #000 no-repeat center center fixed; }
-  #bgvid {
-    display: none; } }
-
 .section-about {
-  height: initial; }
+  height: initial;
+  text-align: center; }
   .section-about .block-wrapper {
-    text-align: center;
     padding: 10px;
     background-color: rgba(194, 204, 204, 0.6);
     width: 80vw;
-    margin: 15px auto; }
+    margin: 15px 20px auto auto; }
     .section-about .block-wrapper .block-title {
       margin: 20px 0 20px 0; }
   .section-about .image-who-we-are {
@@ -539,6 +539,40 @@ template {
     background: url(../images/chicken3.jpg) no-repeat center center;
     background-size: cover; }
 
+@media screen and (min-device-width: 700px) {
+  .section-about .section-title {
+    margin: 20px 0 60px 0; }
+  .section-about .block-wrapper {
+    margin: 15px;
+    width: 40vw;
+    vertical-align: top;
+    display: inline-block; } }
+
+.section-values {
+  text-align: center; }
+  .section-values .content-wrapper {
+    padding: 10px;
+    line-height: 3;
+    text-align: center;
+    background-color: rgba(194, 204, 204, 0.6); }
+    .section-values .content-wrapper .text-wrapper {
+      display: inline-block;
+      width: 50vw;
+      vertical-align: middle; }
+    .section-values .content-wrapper .image-values {
+      vertical-align: middle;
+      height: 310px;
+      width: 350px;
+      background: url(../images/people1.jpg) no-repeat center center;
+      background-size: cover;
+      display: inline-block; }
+
+@media screen and (min-device-width: 700px) {
+  .section-values .section-title {
+    margin: 60px 0 60px 0; }
+  .section-values .content-wrapper {
+    padding: 75px; } }
+
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500; }
@@ -549,3 +583,7 @@ h2 {
 
 section {
   height: 100vh; }
+
+@media screen and (min-device-width: 700px) {
+  section {
+    padding: 0 20px 0 20px; } }
