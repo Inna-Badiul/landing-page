@@ -1,20 +1,13 @@
 $(function() {
+    var $navMenu =  $(".nav-menu");
     $(".hamburger-button").click(function () {
-        $(".menu-items-wrapper").show();
-        $(".close-button").show();
-        $(".nav-menu").addClass("nav-open");
-    });
-
-    $(".close-button").click(function () {
-        $(".menu-items-wrapper").hide();
-        $(".nav-menu").removeClass("nav-open");
-        $(".close-button").hide();
+        $navMenu.fadeToggle();
+        $navMenu.addClass("nav-open");
     });
 
     $(".nav-menu a").click(function () {
-        $(".menu-items-wrapper").hide();
-        $(".nav-menu").removeClass("nav-open");
-        $(".close-button").hide();
+        $navMenu.hide();
+        $navMenu.removeClass("nav-open");
     });
     
 });

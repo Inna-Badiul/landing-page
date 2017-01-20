@@ -3,17 +3,16 @@
 @import 'section-home';
 @import 'section-about';
 @import 'section-values';
+@import 'fonts';
 
 body {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-}
-h2{
-  margin:0;
-  text-align: center;
+  font-family:"proxima-nova","Helvetica Neue", Helvetica, Arial,sans-serif;
 }
 section{
+  width:100vw;
   height:100vh;
+  overflow: hidden;
+  text-align: center;
 }
 @media screen and (min-device-width: 700px) {
   section{

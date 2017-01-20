@@ -2,104 +2,123 @@
   position: relative;
   top: 0;
   width: 100%;
-  height: 60px;
-  background-color: rgba(194, 204, 204, 0.4);
-  .logo-wrapper {
-    background: url(../images/header-logo.png) no-repeat;
-    background-size: 100%;
-    height: 50px;
-    width: 50px;
-    top: 30px;
-    position: absolute;
-    margin-top: -25px;
-    left: 20px;
-  }
-  .hamburger-button {
-    cursor: pointer;
-    position: fixed;
-    right: 20px;
-    top: 30px;
-    margin-top: -16px;
-    width: 32px;
-    height: 32px;
-    background: url(../images/hamburger-icon.png) no-repeat;
-    background-size: 100%;
-  }
-  .close-button {
-    display: none;
-    cursor: pointer;
-    position: fixed;
-    right: 20px;
-    top: 30px;
-    margin-top: -16px;
-    width: 32px;
-    height: 32px;
-    background: url(../images/close-icon.png) no-repeat;
-    background-size: 100%;
-  }
-  .menu-items-wrapper {
-    display: none;
-    list-style: none;
-    padding: 50px;
+  .header-content {
+    background: #333;
+    padding: 9px 12px;
+    vertical-align: middle;
+    .logo-wrapper {
+      background: url(../images/header-logo.png) no-repeat;
+      background-size: 100%;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      vertical-align: middle;
 
-    .list-item {
-      padding-top: 50px;
-      a {
-        text-decoration: none;
-        color: #000;
-      }
-      a:hover {
-        color: #67accb;
-      }
     }
-    .active-item {
-      border-bottom: 1px solid black;
+    .header-title {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
     }
-  }
-
-  .nav-open {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: #67accb;
-  }
-}
-
-@media screen and (min-device-width: 768px) {
-  .header {
     .hamburger-button {
-      display: none;
+      position: fixed;
+      right: 12px;
+      top: 25px;
+      margin-top: -12px;
+      vertical-align: middle;
+      z-index: 3;
+      width: 22px;
+      height: 24px;
+      background: url(../images/hamburger-icon.png) no-repeat center center;
+      background-size: 100%;
     }
     .nav-menu {
-      display: inline-block;
-      float: right;
-      top: 30px;
-      position: absolute;
-      margin-top: -9px;
-      right: 20px;
-    }
-    .menu-items-wrapper {
-      display: initial;
-      padding: 0;
-      .list-item {
+      display: none;
+      .menu-items-wrapper {
+        list-style: none;
+        padding: 50px 50px 0 50px;
+
+        .list-item {
+          border-bottom: 1px solid #444;
+          padding: 20px 0 20px 0;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+          a:hover {
+            color: #67accb;
+          }
+        }
+        .active-item {
+          color: #67accb;
+        }
+      }
+      .sign-up-button {
+        margin: auto;
+        background-color: #00ace9;
         cursor: pointer;
-        padding: 0 15px 0 0;
-        display: inline-block;
+        padding: 8px 15px;
+        border-radius: 3px;
+        width: 130px;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: white
+        }
       }
-      .list-item:last-child {
-        padding-right: 0;
+    }
+    .nav-open {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      background: #333;
+    }
+  }
+}
+
+@media screen and (min-width:929px) {
+  .header {
+    .header-content {
+      padding: 18px 48px;
+      .logo-wrapper{
+        width:39px;
+        height:39px;
+      }
+      .hamburger-button {
+        display: none;
+      }
+      .nav-menu {
+        display: inline-block;
+        float: right;
+        position: initial;
+
+
+        .menu-items-wrapper {
+          font-size: 14px;
+          font-weight: 600;
+          display: inline-block;
+          padding: 0;
+          .list-item {
+            cursor: pointer;
+            padding: 0 32px 0 0;
+            display: inline-block;
+            border:0;
+          }
+
+        }
+        .sign-up-button{
+          display: inline-block;
+          width: 42px;
+          padding: 8px 15px;
+          font-size: 11px;
+        }
       }
     }
   }
 }
-@media screen and (max-device-width: 800px) {
-  html {
-    background: url(../images/The-Poppy.jpg) #000 no-repeat center center fixed;
-  }
-  #bgvid {
-    display: none;
-  }
-}
+

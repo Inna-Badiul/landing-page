@@ -405,110 +405,130 @@ template {
 .header {
   position: relative;
   top: 0;
-  width: 100%;
-  height: 60px;
-  background-color: rgba(194, 204, 204, 0.4); }
-  .header .logo-wrapper {
-    background: url(../images/header-logo.png) no-repeat;
-    background-size: 100%;
-    height: 50px;
-    width: 50px;
-    top: 30px;
-    position: absolute;
-    margin-top: -25px;
-    left: 20px; }
-  .header .hamburger-button {
-    cursor: pointer;
-    position: fixed;
-    right: 20px;
-    top: 30px;
-    margin-top: -16px;
-    width: 32px;
-    height: 32px;
-    background: url(../images/hamburger-icon.png) no-repeat;
-    background-size: 100%; }
-  .header .close-button {
-    display: none;
-    cursor: pointer;
-    position: fixed;
-    right: 20px;
-    top: 30px;
-    margin-top: -16px;
-    width: 32px;
-    height: 32px;
-    background: url(../images/close-icon.png) no-repeat;
-    background-size: 100%; }
-  .header .menu-items-wrapper {
-    display: none;
-    list-style: none;
-    padding: 50px; }
-    .header .menu-items-wrapper .list-item {
-      padding-top: 50px; }
-      .header .menu-items-wrapper .list-item a {
-        text-decoration: none;
-        color: #000; }
-      .header .menu-items-wrapper .list-item a:hover {
-        color: #67accb; }
-    .header .menu-items-wrapper .active-item {
-      border-bottom: 1px solid black; }
-  .header .nav-open {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: #67accb; }
+  width: 100%; }
+  .header .header-content {
+    background: #333;
+    padding: 9px 12px;
+    vertical-align: middle; }
+    .header .header-content .logo-wrapper {
+      background: url(../images/header-logo.png) no-repeat;
+      background-size: 100%;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      vertical-align: middle; }
+    .header .header-content .header-title {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 15px;
+      font-weight: 600;
+      color: white; }
+    .header .header-content .hamburger-button {
+      position: fixed;
+      right: 12px;
+      top: 25px;
+      margin-top: -12px;
+      vertical-align: middle;
+      z-index: 3;
+      width: 22px;
+      height: 24px;
+      background: url(../images/hamburger-icon.png) no-repeat center center;
+      background-size: 100%; }
+    .header .header-content .nav-menu {
+      display: none; }
+      .header .header-content .nav-menu .menu-items-wrapper {
+        list-style: none;
+        padding: 50px 50px 0 50px; }
+        .header .header-content .nav-menu .menu-items-wrapper .list-item {
+          border-bottom: 1px solid #444;
+          padding: 20px 0 20px 0; }
+          .header .header-content .nav-menu .menu-items-wrapper .list-item a {
+            text-decoration: none;
+            color: white; }
+          .header .header-content .nav-menu .menu-items-wrapper .list-item a:hover {
+            color: #67accb; }
+        .header .header-content .nav-menu .menu-items-wrapper .active-item {
+          color: #67accb; }
+      .header .header-content .nav-menu .sign-up-button {
+        margin: auto;
+        background-color: #00ace9;
+        cursor: pointer;
+        padding: 8px 15px;
+        border-radius: 3px;
+        width: 130px;
+        text-align: center; }
+        .header .header-content .nav-menu .sign-up-button a {
+          text-decoration: none;
+          color: white; }
+    .header .header-content .nav-open {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      background: #333; }
 
-@media screen and (min-device-width: 768px) {
-  .header .hamburger-button {
-    display: none; }
-  .header .nav-menu {
-    display: inline-block;
-    float: right;
-    top: 30px;
-    position: absolute;
-    margin-top: -9px;
-    right: 20px; }
-  .header .menu-items-wrapper {
-    display: initial;
-    padding: 0; }
-    .header .menu-items-wrapper .list-item {
-      cursor: pointer;
-      padding: 0 15px 0 0;
-      display: inline-block; }
-    .header .menu-items-wrapper .list-item:last-child {
-      padding-right: 0; } }
-
-@media screen and (max-device-width: 800px) {
-  html {
-    background: url(../images/The-Poppy.jpg) #000 no-repeat center center fixed; }
-  #bgvid {
-    display: none; } }
+@media screen and (min-width: 929px) {
+  .header .header-content {
+    padding: 18px 48px; }
+    .header .header-content .logo-wrapper {
+      width: 39px;
+      height: 39px; }
+    .header .header-content .hamburger-button {
+      display: none; }
+    .header .header-content .nav-menu {
+      display: inline-block;
+      float: right;
+      position: initial; }
+      .header .header-content .nav-menu .menu-items-wrapper {
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+        padding: 0; }
+        .header .header-content .nav-menu .menu-items-wrapper .list-item {
+          cursor: pointer;
+          padding: 0 32px 0 0;
+          display: inline-block;
+          border: 0; }
+      .header .header-content .nav-menu .sign-up-button {
+        display: inline-block;
+        width: 42px;
+        padding: 8px 15px;
+        font-size: 11px; } }
 
 .section-home {
-  overflow: hidden; }
-  .section-home video#bgvid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(../images/The-Poppy.jpg) no-repeat;
-    background-size: cover; }
-  .section-home .home-title {
+  background-size: cover;
+  background: url(../images/nest-and-eggs.jpg) no-repeat center; }
+  .section-home .learn-more-button {
+    display: none; }
+  .section-home .get-started-button {
+    box-shadow: inset 0 -3px 3px -3px #666;
+    display: inline-block;
+    background-color: #00ace9;
+    cursor: pointer;
+    padding: 13px 28px;
+    border-radius: 3px;
+    width: 184px;
+    text-align: center; }
+    .section-home .get-started-button a {
+      text-decoration: none;
+      color: white; }
+
+@media screen and (min-width: 600px) {
+  .section-home .learn-more-button {
+    box-shadow: inset 0 -3px 3px -3px #666;
+    display: inline-block;
+    background-color: #00ace9;
+    cursor: pointer;
+    padding: 13px 28px;
+    border-radius: 3px;
+    width: 184px;
     text-align: center;
-    top: 50vh;
-    left: 50vw;
-    margin: -13px 0px 0px -89px;
-    position: absolute; }
+    margin-right: 48px; }
+    .section-home .learn-more-button a {
+      text-decoration: none;
+      color: white; } }
 
 .section-about {
   height: initial;
@@ -573,16 +593,18 @@ template {
   .section-values .content-wrapper {
     padding: 75px; } }
 
-body {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500; }
+@font-face {
+  font-family: proxima-nova;
+  src: url("../fonts/proxima-nova.otf"); }
 
-h2 {
-  margin: 0;
-  text-align: center; }
+body {
+  font-family: "proxima-nova","Helvetica Neue", Helvetica, Arial,sans-serif; }
 
 section {
-  height: 100vh; }
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center; }
 
 @media screen and (min-device-width: 700px) {
   section {
