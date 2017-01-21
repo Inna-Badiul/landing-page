@@ -3,7 +3,6 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     jsSources = [
-        'node_modules/jquery/dist/jquery.min.js',
         'js/main.js',
         'js/!*.js'
     ];

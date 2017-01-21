@@ -1,0 +1,64 @@
+footer{
+  padding:20px 0 20px 0;
+  text-align: center;
+  background-color: #fff;
+  .list-wrapper{
+    display: inline-block;
+    vertical-align: top;
+    padding:20px;
+    ul{
+      padding:7px;
+      font-size:13px;
+      color: #333;
+      font-weight:bold;
+      list-style: none;
+      li{
+        font-weight:100;
+        font-size:12px;
+        padding-top:7px;
+        a{
+          text-decoration: none;
+          color: #666;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .security-wrapper{
+    margin-top: 41px;
+    .secure-item{
+      margin:20px 40px 20px 40px;
+      display: inline-block;
+      vertical-align: top;
+      background-size: 100%;
+    }
+    .norton-secured{
+      height:72px;
+      width:100px;
+      background:url(../images/verisign.png) no-repeat center center;
+    }
+    .mcaffee{
+      height:54px;
+      width:94px;
+      background:url(../images/13.gif) no-repeat center center;
+    }
+    .truste{
+      height:45px;
+      width:142px;
+      background:url(../images/seal.png) no-repeat center center;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  footer{
+    .list-wrapper{
+      text-align: left;
+      padding: 20px 70px 20px 70px;
+    }
+    .secure-item{
+        margin:20px 85px 20px 40px;
+    }
+  }
+}

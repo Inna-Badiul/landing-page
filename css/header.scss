@@ -1,10 +1,10 @@
 .header {
-  position: relative;
+  position: fixed;
   top: 0;
   width: 100%;
   .header-content {
     background: #333;
-    padding: 9px 12px;
+    padding: 10px 12px;
     vertical-align: middle;
     .logo-wrapper {
       background: url(../images/header-logo.png) no-repeat;
@@ -68,6 +68,9 @@
           color: white
         }
       }
+      .sign-up-button:hover{
+        background-color: #00a4e1;
+      }
     }
     .nav-open {
       position: fixed;
@@ -84,6 +87,7 @@
 @media screen and (min-width:929px) {
   .header {
     .header-content {
+      background-color: rgba(0,0,0,0.3);
       padding: 18px 48px;
       .logo-wrapper{
         width:39px;
