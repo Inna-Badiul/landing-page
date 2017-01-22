@@ -13,7 +13,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('scripts:dev', function () {
+gulp.task('scripts', function () {
     return gulp.src(jsSources)
         .pipe(concat('all.js'))
         .pipe(uglify())
@@ -22,9 +22,9 @@ gulp.task('scripts:dev', function () {
 
 gulp.task('watch', function () {
     gulp.watch('css/*.scss', ['sass']);
-    gulp.watch('js/*.js', ['scripts:dev']);
+    gulp.watch('js/*.js', ['scripts']);
 });
 
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'watch', 'scripts']);
 
