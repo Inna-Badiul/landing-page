@@ -3,8 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     jsSources = [
-        'js/main.js',
-        'js/!*.js'
+        'js/main.js'
     ];
 
 gulp.task('sass', function () {

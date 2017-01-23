@@ -4,24 +4,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
         navMenu = document.querySelector(".nav-menu"),
         isOpen = false;
 
-    function closeMenu(item) {
-        item.addEventListener("click", function () {
-            navMenu.classList.remove("nav-open");
-        });
+    function closeMenu() {
+        navMenu.classList.remove("nav-open");
+        isOpen = false;
     }
 
-    function navOpen() {
+    function openMenu() {
         navMenu.classList.add("nav-open");
         isOpen = true;
     }
+
     function toggleMenu() {
         if (isOpen === false) {
-            navOpen();
+            openMenu();
         } else {
-            navMenu.classList.remove("nav-open");
-            isOpen = false;
+            closeMenu();
         }
     }
+
+    function closeByClickOnMenuItem(item) {
+        item.addEventListener("click",closeMenu);
+    }
     hamburgerButton.addEventListener("click", toggleMenu);
-    listItem.forEach(closeMenu);
+    listItem.forEach(closeByClickOnMenuItem);
 });
