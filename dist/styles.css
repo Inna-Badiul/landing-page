@@ -627,6 +627,7 @@ template {
     color: #333;
     font-size: 22px; }
   .section-about .block-wrapper {
+    display: inline-block;
     padding: 10px;
     width: 255px;
     margin: 15px 7px 0 7px; }
@@ -665,7 +666,6 @@ template {
   .section-about .block-wrapper {
     margin: 15px;
     vertical-align: top;
-    display: inline-block;
     width: 364px; }
     .section-about .block-wrapper .block-title {
       width: 364px;
