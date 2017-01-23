@@ -1,9 +1,9 @@
 .section-values {
-  padding:52px 16px;
+  padding: 52px 16px;
   text-align: center;
-  .section-title{
-    margin:0;
-    color:#333;
+  .section-title {
+    margin: 0;
+    color: #333;
     font-size: 22px;
   }
   .text-wrapper {
@@ -11,7 +11,7 @@
     display: inline-block;
   }
   .content-wrapper {
-    padding:10px;
+    padding: 10px;
     line-height: 3;
     text-align: center;
     background-color: rgba(194, 204, 204, 0.6);
@@ -25,19 +25,20 @@
     }
   }
 }
+
 @media screen and (min-width: 600px) {
   .section-values {
-    padding:72px 40px;
-    .section-title{
+    padding: 72px 40px;
+    .section-title {
       font-size: 32px;
       margin: 0 0 10px 0;
     }
-    .text-wrapper{
+    .text-wrapper {
       font-size: 18px;
-      width:600px;
+      width: 600px;
     }
     .content-wrapper {
-      padding:75px;
+      padding: 75px;
     }
   }
 }

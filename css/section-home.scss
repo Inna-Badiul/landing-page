@@ -11,6 +11,7 @@
     .sub-title {
       margin: 30px 0 14px 0;
       font-size: 20px;
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
     }
     .learn-more-button {
       display: none;
@@ -89,10 +90,10 @@
 }
 
 @media screen and (min-width: 929px) {
-  .section-home{
-  background: url(../images/people1.jpg) no-repeat 50% 50%;
-    .home-content-wrapper{
-      height:447px;
+  .section-home {
+    background: url(../images/people1.jpg) no-repeat 50% 50%;
+    .home-content-wrapper {
+      height: 447px;
       .home-title {
         padding-top: 10px;
       }
@@ -100,9 +101,9 @@
     .featured-in-wrapper {
       .featured-title {
         display: inline-block;
-        padding:16px;
+        padding: 16px;
       }
-      .featured-item-wrapper{
+      .featured-item-wrapper {
         vertical-align: middle;
       }
     }

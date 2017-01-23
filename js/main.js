@@ -1,16 +1,15 @@
-var hamburgerButton = document.getElementsByClassName("hamburger-button");
-var listItem = document.getElementsByClassName("list-item");
-var navMenu = document.getElementsByClassName("nav-menu");
+document.addEventListener("DOMContentLoaded", function (event) {
+    var hamburgerButton = document.querySelector(".hamburger-button"),
+        listItem = document.querySelectorAll(".list-item"),
+        navMenu = document.querySelector(".nav-menu");
 
-
-hamburgerButton[0].addEventListener("click", function () {
-    navMenu[0].style.display = "block";
-    navMenu[0].classList.add("nav-open");
-});
-
-for (var i = 0; i < listItem.length; i++) {
-    listItem[i].addEventListener("click", function () {
-        navMenu[0].style.display = "none";
-        navMenu[0].classList.remove("nav-open");
+    hamburgerButton.addEventListener("click", function () {
+        navMenu.classList.add("nav-open");
     });
-}
+
+    listItem.forEach(function (item) {
+        item.addEventListener("click", function () {
+            navMenu.classList.remove("nav-open");
+        });
+    });
+});
