@@ -23,8 +23,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     function closeByClickOnMenuItem(item) {
-        item.addEventListener("click",closeMenu);
+        item.addEventListener("click", closeMenu);
     }
+
     hamburgerButton.addEventListener("click", toggleMenu);
     listItem.forEach(closeByClickOnMenuItem);
+    smoothScroll.init();
 });

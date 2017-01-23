@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     jsSources = [
+        'node_modules/smooth-scroll/dist/js/smooth-scroll.min.js',
         'js/main.js'
     ];
 
@@ -23,7 +24,5 @@ gulp.task('watch', function () {
     gulp.watch('css/*.scss', ['sass']);
     gulp.watch('js/*.js', ['scripts']);
 });
-
-
 gulp.task('default', ['sass', 'watch', 'scripts']);
 
