@@ -41,10 +41,11 @@
 
         .list-item {
           border-bottom: 1px solid #444;
-          padding: 20px 0 20px 0;
           a {
             text-decoration: none;
+            padding: 20px 0 20px 0;
             color: white;
+            display: block;
           }
           a:hover {
             color: #67accb;
@@ -74,7 +75,7 @@
   }
 }
 
-@media (max-width: 929px) {
+@media (max-width: 700px) {
   .header {
     .header-content {
       .nav-open {
@@ -91,7 +92,7 @@
   }
 }
 
-@media screen and (min-width: 929px) {
+@media screen and (min-width: 700px) {
   .header {
     .header-content {
       background-color: rgba(0, 0, 0, 0.3);
@@ -115,9 +116,12 @@
           padding: 0;
           .list-item {
             cursor: pointer;
-            padding: 0 32px 0 0;
+            padding: 0 10px 0 0;
             display: inline-block;
             border: 0;
+            a {
+              padding: initial;
+            }
           }
 
         }
@@ -132,3 +136,18 @@
   }
 }
 
+@media screen and (min-width: 929px) {
+  .header {
+    .header-content {
+      .nav-menu {
+        .menu-items-wrapper {
+          .list-item {
+            cursor: pointer;
+            padding: 0 32px 0 0;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
